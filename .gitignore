@@ -1,0 +1,5 @@
+# tar balls
+*.tar.gz
+
+# zip files
+*.zip
