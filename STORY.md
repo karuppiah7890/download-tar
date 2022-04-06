@@ -88,3 +88,105 @@ CA.zip		DE.zip		FR.zip		ID.zip		STORY.md	go.mod
 CN.zip		ES.zip		GB.zip		README.md	US.zip		main.go
 download-tar $
 ```
+
+```bash
+download-tar $ gst
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   main.go
+
+download-tar $ go run main.go
+Downloading https://github.com/vmware-tanzu/community-edition/releases/download/v0.11.0/tce-darwin-amd64-v0.11.0.tar.gz to tce-darwin-amd64-v0.11.0.tar.gz
+
+```
+
+```bash
+download-tar $ ls
+CA.zip				GB.zip				go.mod
+CN.zip				ID.zip				main.go
+DE.zip				README.md			tce-darwin-amd64-v0.11.0.tar.gz
+ES.zip				STORY.md
+FR.zip				US.zip
+download-tar $ ls *.zip
+CA.zip	CN.zip	DE.zip	ES.zip	FR.zip	GB.zip	ID.zip	US.zip
+download-tar $ rm -rfv *.zip
+CA.zip
+CN.zip
+DE.zip
+ES.zip
+FR.zip
+GB.zip
+ID.zip
+US.zip
+download-tar $ ls
+README.md			go.mod				tce-darwin-amd64-v0.11.0.tar.gz
+STORY.md			main.go
+download-tar $ ls -alh
+total 262312
+drwxr-xr-x   9 karuppiahn  staff   288B Apr  6 14:56 .
+drwxr-xr-x  26 karuppiahn  staff   832B Apr  6 14:49 ..
+drwxr-xr-x  12 karuppiahn  staff   384B Apr  6 14:55 .git
+-rw-r--r--   1 karuppiahn  staff    40B Apr  6 14:55 .gitignore
+-rw-r--r--   1 karuppiahn  staff   131B Apr  6 14:50 README.md
+-rw-r--r--   1 karuppiahn  staff   2.3K Apr  6 14:54 STORY.md
+-rw-r--r--   1 karuppiahn  staff    54B Apr  6 14:49 go.mod
+-rw-r--r--   1 karuppiahn  staff   893B Apr  6 14:55 main.go
+-rw-r--r--   1 karuppiahn  staff   122M Apr  6 14:56 tce-darwin-amd64-v0.11.0.tar.gz
+download-tar $
+```
+
+```bash
+download-tar $ ls -alh
+total 557224
+drwxr-xr-x   9 karuppiahn  staff   288B Apr  6 14:56 .
+drwxr-xr-x  26 karuppiahn  staff   832B Apr  6 14:49 ..
+drwxr-xr-x  12 karuppiahn  staff   384B Apr  6 14:55 .git
+-rw-r--r--   1 karuppiahn  staff    40B Apr  6 14:55 .gitignore
+-rw-r--r--   1 karuppiahn  staff   131B Apr  6 14:50 README.md
+-rw-r--r--   1 karuppiahn  staff   3.7K Apr  6 14:56 STORY.md
+-rw-r--r--   1 karuppiahn  staff    54B Apr  6 14:49 go.mod
+-rw-r--r--   1 karuppiahn  staff   893B Apr  6 14:55 main.go
+-rw-r--r--   1 karuppiahn  staff   262M Apr  6 14:56 tce-darwin-amd64-v0.11.0.tar.gz
+download-tar $ ls -alh
+total 557224
+drwxr-xr-x   9 karuppiahn  staff   288B Apr  6 14:56 .
+drwxr-xr-x  26 karuppiahn  staff   832B Apr  6 14:49 ..
+drwxr-xr-x  12 karuppiahn  staff   384B Apr  6 14:55 .git
+-rw-r--r--   1 karuppiahn  staff    40B Apr  6 14:55 .gitignore
+-rw-r--r--   1 karuppiahn  staff   131B Apr  6 14:50 README.md
+-rw-r--r--   1 karuppiahn  staff   3.7K Apr  6 14:56 STORY.md
+-rw-r--r--   1 karuppiahn  staff    54B Apr  6 14:49 go.mod
+-rw-r--r--   1 karuppiahn  staff   893B Apr  6 14:55 main.go
+-rw-r--r--   1 karuppiahn  staff   266M Apr  6 14:56 tce-darwin-amd64-v0.11.0.tar.gz
+download-tar $ ls -alh
+total 557224
+drwxr-xr-x   9 karuppiahn  staff   288B Apr  6 14:56 .
+drwxr-xr-x  26 karuppiahn  staff   832B Apr  6 14:49 ..
+drwxr-xr-x  12 karuppiahn  staff   384B Apr  6 14:55 .git
+-rw-r--r--   1 karuppiahn  staff    40B Apr  6 14:55 .gitignore
+-rw-r--r--   1 karuppiahn  staff   131B Apr  6 14:50 README.md
+-rw-r--r--   1 karuppiahn  staff   3.7K Apr  6 14:56 STORY.md
+-rw-r--r--   1 karuppiahn  staff    54B Apr  6 14:49 go.mod
+-rw-r--r--   1 karuppiahn  staff   893B Apr  6 14:55 main.go
+-rw-r--r--   1 karuppiahn  staff   266M Apr  6 14:56 tce-darwin-amd64-v0.11.0.tar.gz
+download-tar $ ls -alh
+total 557224
+drwxr-xr-x   9 karuppiahn  staff   288B Apr  6 14:56 .
+drwxr-xr-x  26 karuppiahn  staff   832B Apr  6 14:49 ..
+drwxr-xr-x  12 karuppiahn  staff   384B Apr  6 14:55 .git
+-rw-r--r--   1 karuppiahn  staff    40B Apr  6 14:55 .gitignore
+-rw-r--r--   1 karuppiahn  staff   131B Apr  6 14:50 README.md
+-rw-r--r--   1 karuppiahn  staff   3.7K Apr  6 14:56 STORY.md
+-rw-r--r--   1 karuppiahn  staff    54B Apr  6 14:49 go.mod
+-rw-r--r--   1 karuppiahn  staff   893B Apr  6 14:55 main.go
+-rw-r--r--   1 karuppiahn  staff   266M Apr  6 14:56 tce-darwin-amd64-v0.11.0.tar.gz
+download-tar $
+```
+
+```bash
+download-tar $ go run main.go
+Downloading https://github.com/vmware-tanzu/community-edition/releases/download/v0.11.0/tce-darwin-amd64-v0.11.0.tar.gz to tce-darwin-amd64-v0.11.0.tar.gz
+279082837 bytes downloaded.
+download-tar $
+```

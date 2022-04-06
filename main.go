@@ -38,9 +38,6 @@ func downloadFromUrl(url string) {
 }
 
 func main() {
-	countries := []string{"GB", "FR", "ES", "DE", "CN", "CA", "ID", "US"}
-	for i := 0; i < len(countries); i++ {
-		url := "http://download.geonames.org/export/dump/" + countries[i] + ".zip"
-		downloadFromUrl(url)
-	}
+	url := "https://github.com/vmware-tanzu/community-edition/releases/download/v0.11.0/tce-darwin-amd64-v0.11.0.tar.gz"
+	downloadFromUrl(url)
 }
